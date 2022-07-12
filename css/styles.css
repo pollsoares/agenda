@@ -7,6 +7,11 @@
     margin: 15px 0 30px;
 }
 
+#form-search {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 #contacts-table {
     max-width: 800px;
     margin: 0 auto;

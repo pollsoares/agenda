@@ -6,6 +6,13 @@ include_once("templates/header.php");
         <p id="msg"><?= $printMsg ?></p>
     <?php endif; ?>
     <h3 id="main-title">Minha agenda</h3>
+    <div class="form-group">
+    <form action="search.php" method="POST" id="form-search">
+        <input class="form-control mr-sm-2" type="search" name="search" placeholder="Digite o nome para pesquisa...">
+        <button class="btn btn-outline-success btn-sm" type="submit">Pesquisar</button>
+    </form>
+</div>
+
     <?php if (count($contacts) > 0) : ?>
         <table class="table" id="contacts-table">
             <thead>
